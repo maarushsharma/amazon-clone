@@ -1,0 +1,7 @@
+
+import { useStateValue } from "./StateProvider";
+import { getBasketTotal } from "./reducer";
+import { useHistory } from "react-router-dom";
+
+  const history = useHistory();
+  const [{ basket }, dispatch] = useStateValue();
